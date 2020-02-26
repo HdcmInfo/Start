@@ -18,30 +18,30 @@
        var URL = "https://c39rsx5v9b.execute-api.ap-southeast-2.amazonaws.com/Prod/contactus";
 
             var Namere = /[A-Za-z]{1}[A-Za-z]/;
-            if (!Namere.test($("#name-input").val())) {
+            if (!Namere.test($("#field1").val())) {
                          alert ("Name can not less than 2 char");
                 return;
             }
             var mobilere = /[0-9]{10}/;
-            if (!mobilere.test($("#phone-input").val())) {
+            if (!mobilere.test($("#field4").val())) {
                 alert ("Please enter valid mobile number");
                 return;
             }
-            if ($("#email-input").val()=="") {
+            if ($("#field2").val()=="") {
                 alert ("Please enter your email id");
                 return;
             }
 
             var reeamil = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,6})?$/;
-            if (!reeamil.test($("#email-input").val())) {
+            if (!reeamil.test($("#field2").val())) {
                 alert ("Please enter valid email address");
                 return;
             }
 
-       var name = $("#name-input").val();
-       var phone = $("#phone-input").val();
-       var email = $("#email-input").val();
-       var desc = $("#description-input").val();
+       var name = $("#field1").val();
+       var phone = $("#field4").val();
+       var email = $("#field2").val();
+       var desc = $("#field4").val();
        var data = {
           name : name,
           phone : phone,
@@ -61,7 +61,7 @@
          success: function () {
            // clear form and show a success message
            alert("Successfull");
-           document.getElementById("contact-form").reset();
+           document.getElementById("id_1582693518480_360").reset();
        location.reload();
          },
          error: function () {
@@ -408,7 +408,7 @@
             
         <div data-silex-type="text-element" class="editable-style silex-id-1483140123370-22 text-element" data-silex-id="silex-id-1483140123370-22" style="">
                 <div class="silex-element-content normal"><h2>Contact us<br></h2></div>
-            </div><div data-silex-type="html-element" class="editable-style silex-id-1548873044453-5 html-element silex-component silex-component-form silex-use-height-not-minheight silex-element-content-full-height" data-silex-id="silex-id-1548873044453-5" style=""><div class="silex-element-content"><form id="id_1582693518480_360" action="https://formspree.io/your@email.com" method="POST" onsubmit="return onsubmit_1582693518480_360(event);">
+            </div><div data-silex-type="html-element" class="editable-style silex-id-1548873044453-5 html-element silex-component silex-component-form silex-use-height-not-minheight silex-element-content-full-height" data-silex-id="silex-id-1548873044453-5" style=""><div class="silex-element-content"><form id="id_1582693518480_360"  method="POST" onsubmit="return onsubmit_1582693518480_360(event);">
   
   <div>
     <label for="field1">Name</label>
