@@ -19,7 +19,7 @@
 
             var Namere = /[A-Za-z]{1}[A-Za-z]/;
             if (!Namere.test($("#field1").val())) {
-                         alert ("Name can not less than 2 char");
+                         Swal.fire ("Name can not less than 2 char");
                 return;
             }
          //   var mobilere = /[0-9]{10}/;
@@ -28,13 +28,13 @@
         //       return;
          // }
             if ($("#field2").val()=="") {
-                alert ("Please enter your email id");
+                Swal.fire ("Please enter your email id");
                 return;
             }
 
             var reeamil = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,6})?$/;
             if (!reeamil.test($("#field2").val())) {
-                alert ("Please enter valid email address");
+                Swal.fire ("Please enter valid email address");
                 return;
             }
 
