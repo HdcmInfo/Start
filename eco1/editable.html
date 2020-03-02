@@ -60,12 +60,12 @@
          
          success: function () {
            // clear form and show a success message
-           alert("Thanks for your enquiry, we will get back to you shortly");
-           //Swal.fire(
-  //'Thank you!',
-  //'Thanks for your enquiry, we will get back to you shortly',
-  //'success'
-//)
+           //alert("Thanks for your enquiry, we will get back to you shortly");
+           Swal.fire(
+  'Thank you!',
+  'Thanks for your enquiry, we will get back to you shortly',
+  'success'
+)
            document.getElementById("contact-form").reset();
        location.reload();
          },
